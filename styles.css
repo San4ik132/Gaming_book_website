@@ -4,6 +4,7 @@ body {
   display: flex;
   align-items: center;
   top: auto;
+  overflow: auto
 }
 
 .Hi {
@@ -24,6 +25,7 @@ body {
 }
 
 .gradient-button {
+  
     text-decoration: none;
     display: inline-block;
     color: rgb(56, 30, 30);
