@@ -5,50 +5,52 @@
 
 body {
   background-color: #d6eaf8;
-  text-align:center;
+  text-align: center;
   justify-content: center;
   display: flex;
   align-items: center;
 }
 
-.container{
+.container {
   margin-top: 190px;
 }
 
 .Hi {
   top: 100%;
-    font-size: 90px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
+  font-family: "Montserrat", sans-serif;
 }
 .Hi2 {
-    
-    margin: 30px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+  margin: 30px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .gradient-button {
-    text-decoration: none;
-    display: inline-block;
-    color: rgb(56, 30, 30);
-    padding: 20px 30px;
-    margin: 10px 20px;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
-    background-size: 200% auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-    transition: .5s;
-  }
-  .gradient-button:hover {
-    background-position: right center;
-  }
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(56, 30, 30);
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #4830f0 51%,
+    #9eefe1 100%
+  );
+  background-size: 200% auto;
 
-  
-  
-
-
- 
-  
+  transition: 0.5s;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.gradient-button:hover {
+  background-position: right center;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}
