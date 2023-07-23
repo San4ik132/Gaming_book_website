@@ -1,31 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #d6eaf8;
+  text-align:center;
   justify-content: center;
   display: flex;
   align-items: center;
-  top: auto;
-  overflow: auto
+}
+
+.container{
+  margin-top: 200px;
 }
 
 .Hi {
-    position:absolute;
-    width: 99%;
-    top:12%;
-    text-align:center;
-    font-size: 40px;
+  top: 100%;
+    font-size: 90px;
     font-family: 'Montserrat', sans-serif;
 }
 .Hi2 {
-    position:absolute;
-    width: 99%;
-    top:80%;
-    text-align:center;
-    font-size: 15px;
+    margin-top: 30px;
+    margin: 30px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .gradient-button {
-  
     text-decoration: none;
     display: inline-block;
     color: rgb(56, 30, 30);
