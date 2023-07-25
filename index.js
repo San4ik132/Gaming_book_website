@@ -5,18 +5,25 @@ const rotateBtn = (document.onmousemove = (e) => {
   var y = Math.round(window.innerHeight / 2 - e.y);
   var x = Math.round(window.innerWidth / 2 - e.x);
   moreBtn.style.transform = `rotate3d(${-y}, ${x}, 0, 25deg)`;
+  moreBtn.style.boxShadow = `${x / 80}px ${
+    y / 80
+  }px 10px 5px rgba(0, 0, 0, 0.5)`;
   moreBtn.style.transition = ".5s";
 });
 
 const noneRotateBtn = document.addEventListener("mouseout", (e) => {
   if (e.relatedTarget === null) {
     moreBtn.style.transform = "rotate3d(0, 0, 0, 0deg)";
+    moreBtn.style.boxShadow = "0px 0px 10px 5px rgba(0, 0, 0, 0.5)";
     moreBtn.style.transition = ".5s";
   }
 });
-const ClickRotateBtn = (document.onmouseout = (e) => {
-  if (moreBtn.offsetHeight >= e.x && moreBtn.offsetWidth <= e.x) {
+
+const stopNoneRotateBtn = document.addEventListener("mouseover", (e) => {
+  if (e.relatedTarget === null) {
+    console.log("123");
     moreBtn.style.transform = "rotate3d(0, 0, 0, 0deg)";
+    moreBtn.style.boxShadow = "0px 0px 10px 5px rgba(0, 0, 0, 0.5)";
     moreBtn.style.transition = ".5s";
   }
 });

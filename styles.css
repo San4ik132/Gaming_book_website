@@ -1,19 +1,25 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
-
+html,
 body {
   background-color: #d6eaf8;
   text-align: center;
   justify-content: center;
-  display: flex;
   align-items: center;
-  z-index: 0;
+  word-break: break-all;
+  height: 100%;
 }
 
 .container {
   margin-top: 190px;
+  flex: 1 0 auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .Hi {
@@ -46,7 +52,7 @@ body {
   background-size: 200% auto;
 
   transition: 0.5s;
-  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .gradient-button:hover {
   background-position: right center;
@@ -57,10 +63,8 @@ body {
 }
 
 .footer {
-  position: fixed;
+  flex: 0 0 auto;
   top: 92%;
-  right: 0;
-  bottom: 0;
   width: 30%;
   right: 35%;
   border-radius: 100px;
